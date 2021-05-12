@@ -7,6 +7,7 @@ Gruppe 7 består av:
   Victoria L.
   
 Vi bruker Arduino IDE som programmerings applikasjon. 
+
 Biblioteker brukt:
   FastLED
   Wire
