@@ -51,6 +51,7 @@ const int downButton = A1;
 const int selectButton = A0;
 // creating the buttons and assigning pins to each button (the analog pins on our Arduino can also be used as digital pins,
 // this is done automatically when using pinMode)
+// Up and Down button can change pins depending on the direction the button breadboard is.
 
 String inString = "";             // Declaring a string called "inString" where we store the input data from the Serial Monitor 
 int pixelmap[NUM_LEDS+50] = {0};  //Declaring and array for our pixelmap and adding some extra slots in it needed to account for empty spaces in the input string
