@@ -39,7 +39,7 @@
                                                           // number of LEDS per strip and then adding the safety LEDS
                                                           
 CRGB leds[NUM_LEDS]; // this is where we create our CRGB struct, using the global variable NUM_LEDS, to tell the struct how much LED data it is storing.
-                     //(3 bytes of data per LED, 1 byte each for Red, Green, and Blue)
+                     // (3 bytes of data per LED, 1 byte each for Red, Green, and Blue)
 
 // All of the global variables were created to make it easier to change the size of the matrix, or change the light type and RGB order of the new light type
 
