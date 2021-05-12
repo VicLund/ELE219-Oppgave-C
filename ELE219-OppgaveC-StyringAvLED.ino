@@ -1142,7 +1142,7 @@ void Col_conversion()
   }
   memset (pixelmap, 0, sizeof(pixelmap));                // Clears our pixelmap[] when all its data elements within the array has been converted into HEX colour codes, and stored into our new array leds[]. 
   
-  Serial.println("Image Uploaded");                      // Lets the user know that the Image they drew in excel has been successfully converted, and will be showed on our physical LED matrice. 
+  Serial.println("Image Uploaded");                      // Lets the user know that the Image they drew in excel has been successfully converted, uploaded to the Arduino, and is ready to be displayed on our 20x25 LED matrix. 
   Serial.println();
   Serial.println("Ready to receive pixeldata...");
   Serial.print("Red button to exit");
