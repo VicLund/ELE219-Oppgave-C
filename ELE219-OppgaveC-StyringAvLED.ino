@@ -1048,10 +1048,10 @@ void userUpload(){
 
 void serialAvailable(){
   while(1){
-    while (Serial.available() > 0)            // if new input has arrived in the Serial Monitor this function will run subsequent functions to 
-                                              // read input from the Serial Monitor, then store that input in a string, then print the string that was given as input, 
-    {                                         // then convert that string into an array, and in the end change the values in that array to CRGB colour codes
-      if (digitalRead(stopButton) == LOW){    // but can also be set to HEX colour codes that can be interpreted and sent to our LED strips.
+    while (Serial.available() > 0)            // if new input is available from the Serial Monitor, then this function will run these subsequent functions to 
+                                              // read the input pasted into the Serial Monitor, then store that input in a string, then print the string that was given as input, 
+    {                                         // then convert that string into an array, and in the end change the values in that array to CRGB colour codes.
+      if (digitalRead(stopButton) == LOW){    // The data can also be set to HEX colour codes that can be interpreted and sent to our LED strips.
           goto exit;
       }
       User_Input2();
@@ -1137,10 +1137,10 @@ void Col_conversion()
         break;
         
     default:
-        Serial.print("");                                // The default case is where it will end up if any of the elements does not match any cases in this switch - case structure.
+        Serial.print("");                                // The default case is where it will end up if any of the elements in the strig does not match any cases in this switch - case structure. 
     }
   }
-  memset (pixelmap, 0, sizeof(pixelmap));                // Clears our pixelmap[] when all its data elements within the array has been converted into HEX colour codes, and stored into our new array leds[]. 
+  memset (pixelmap, 0, sizeof(pixelmap));                // Clears our pixelmap[] after all its data elements have been copied and converted into HEX colour codes, and stored into our new array leds[]. 
   
   Serial.println("Image Uploaded");                      // Lets the user know that the Image they drew in excel has been successfully converted, uploaded to the Arduino, and is ready to be displayed on our 20x25 LED matrix. 
   Serial.println();
