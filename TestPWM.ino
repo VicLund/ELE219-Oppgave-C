@@ -1,3 +1,5 @@
+// NOTE: might be an old version
+
 int PIN_0 = 0;
 int PIN_1 = 1;
 int PIN_2 = 2;
